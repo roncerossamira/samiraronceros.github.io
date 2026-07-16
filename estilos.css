@@ -1,0 +1,430 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f7faf7;
+    color:#2f3e2f;
+    line-height:1.6;
+}
+
+
+header{
+
+    position:sticky;
+    top:0;
+
+    background:#ffffff;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:18px 8%;
+
+    box-shadow:0px 2px 8px rgba(0,0,0,.08);
+
+    z-index:1000;
+
+}
+
+.logo h1{
+
+    color:#2E7D32;
+
+}
+
+nav a{
+    color:#3c3c3c;
+
+    margin-left:25px;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+nav a:hover{
+
+    color:#2E7D32;
+
+}
+
+
+.hero{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:70px 8%;
+
+    gap:40px;
+
+}
+
+.hero-texto{
+
+    flex:1;
+
+}
+
+.hero-texto h2{
+
+    font-size:45px;
+
+    color:#1B5E20;
+
+    margin-bottom:20px;
+
+}
+
+.hero-texto p{
+
+    margin-bottom:35px;
+
+    color:#555;
+
+}
+
+.hero-imagen{
+
+    flex:1;
+
+}
+
+.hero-imagen img{
+
+    width:100%;
+
+    border-radius:20px;
+
+}
+
+.boton{
+
+    display:inline-block;
+
+    text-decoration:none;
+
+    background:#43A047;
+
+    color:white;
+
+    padding:14px 30px;
+
+    border-radius:8px;
+
+    transition:.3s;
+
+}
+
+.boton:hover{
+    background:#2E7D32;
+
+}
+
+
+section{
+
+    padding:70px 8%;
+
+}
+
+section h2{
+
+    text-align:center;
+
+    color:#2E7D32;
+
+    margin-bottom:20px;
+
+    font-size:34px;
+
+}
+
+.descripcion{
+
+    text-align:center;
+
+    max-width:800px;
+
+    margin:auto;
+
+    margin-bottom:45px;
+
+    color:#555;
+
+}
+
+
+.tarjetas{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+
+    gap:25px;
+
+}
+
+.card{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    text-align:center;
+
+    box-shadow:0px 4px 10px rgba(0,0,0,.05);
+
+    transition:.3s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-5px);
+
+}
+
+.card h3{
+
+    color:#2E7D32;
+
+    margin-bottom:15px;
+
+}
+
+
+.contenedor-cultivos{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+
+    gap:30px;
+
+}
+
+.cultivo{
+
+    background:white;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    text-align:center;
+
+    box-shadow:0px 4px 10px rgba(0,0,0,.05);
+
+    transition:.3s;
+
+}
+
+.cultivo:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.cultivo img{
+
+    width:100%;
+
+    height:180px;
+
+    object-fit:cover;
+
+}
+
+.cultivo h3{
+
+    margin-top:18px;
+
+    color:#2E7D32;
+
+}
+
+.cultivo p{
+
+    padding:15px;
+
+    color:#666;
+
+}
+
+
+.timeline{
+
+    max-width:700px;
+
+    margin:auto;
+
+}
+
+.etapa{
+
+    background:white;
+
+    padding:25px;
+
+    margin-bottom:20px;
+
+    border-left:6px solid #43A047;
+    border-top: 6px solid #43A047;
+
+    border-radius:10px;
+
+    box-shadow:0px 4px 10px rgba(0,0,0,.05);
+
+}
+
+.etapa h3{
+
+    color:#2E7D32;
+
+    margin-bottom:10px;
+
+}
+
+
+form{
+
+    max-width:600px;
+
+    margin:auto;
+
+}
+
+input,
+textarea{
+
+    width:100%;
+
+    padding:15px;
+
+    margin-bottom:18px;
+
+    border:1px solid #cfd8cf;
+
+    border-radius:8px;
+
+    outline:none;
+
+}
+
+textarea{
+
+    height:150px;
+
+    resize:none;
+
+}
+
+button{
+
+    width:100%;
+
+    padding:15px;
+
+    background:#43A047;
+
+    color:white;
+
+    border:none;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+button:hover{
+
+    background:#2E7D32;
+
+}
+
+small{
+
+    display:block;
+
+    text-align:center;
+
+    margin-top:15px;
+
+    color:#666;
+
+}
+
+
+footer{
+
+    background:#1B5E20;
+
+    color:white;
+
+    text-align:center;
+
+    padding:35px;
+
+}
+
+footer p{
+
+    margin:8px 0;
+
+}
+
+
+@media(max-width:768px){
+
+    header{
+
+        flex-direction:column;
+
+    }
+
+    nav{
+
+        margin-top:15px;
+
+    }
+
+    nav a{
+
+        margin:10px;
+
+        display:inline-block;
+
+    }
+
+    .hero{
+
+        flex-direction:column;
+
+        text-align:center;
+
+    }
+
+    .hero-texto h2{
+
+        font-size:35px;
+
+    }
+
+}
